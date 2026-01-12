@@ -61,6 +61,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmDMChatlieu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDMChatlieu.Designer.cs">
+      <DependentUpon>frmDMChatlieu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDMhanghoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDMhanghoa.Designer.cs">
+      <DependentUpon>frmDMhanghoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDMkhachhang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDMkhachhang.Designer.cs">
+      <DependentUpon>frmDMkhachhang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDMNhanvien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDMNhanvien.Designer.cs">
+      <DependentUpon>frmDMNhanvien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHDbanhang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHDbanhang.Designer.cs">
+      <DependentUpon>frmHDbanhang.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +99,21 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmDMChatlieu.resx">
+      <DependentUpon>frmDMChatlieu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDMhanghoa.resx">
+      <DependentUpon>frmDMhanghoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDMkhachhang.resx">
+      <DependentUpon>frmDMkhachhang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDMNhanvien.resx">
+      <DependentUpon>frmDMNhanvien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHDbanhang.resx">
+      <DependentUpon>frmHDbanhang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
@@ -118,6 +163,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Images\Commodities.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Search_find.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Search_find_locate_1542.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

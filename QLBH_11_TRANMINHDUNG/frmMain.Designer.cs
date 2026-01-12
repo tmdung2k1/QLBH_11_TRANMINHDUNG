@@ -33,10 +33,6 @@
             this.tệpTinToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnu_file = new System.Windows.Forms.ToolStripMenuItem();
             this.mnu_danhmuc = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnu_chatlieu = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnu_nhanvien = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnu_khachhang = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnu_hanghoa = new System.Windows.Forms.ToolStripMenuItem();
             this.mnu_hoadon = new System.Windows.Forms.ToolStripMenuItem();
             this.mnu_hoadonban = new System.Windows.Forms.ToolStripMenuItem();
             this.mnu_timkiem = new System.Windows.Forms.ToolStripMenuItem();
@@ -49,8 +45,12 @@
             this.trợGiúpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuHien_trogiup = new System.Windows.Forms.ToolStripMenuItem();
             this.mnu_vainet = new System.Windows.Forms.ToolStripMenuItem();
-            this.pic_bg = new System.Windows.Forms.PictureBox();
             this.lbl_tieude = new System.Windows.Forms.Label();
+            this.pic_bg = new System.Windows.Forms.PictureBox();
+            this.mnu_chatlieu = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnu_nhanvien = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnu_khachhang = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnu_hanghoa = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_bg)).BeginInit();
             this.SuspendLayout();
@@ -85,7 +85,7 @@
             // 
             this.mnu_file.Name = "mnu_file";
             this.mnu_file.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
-            this.mnu_file.Size = new System.Drawing.Size(224, 26);
+            this.mnu_file.Size = new System.Drawing.Size(183, 26);
             this.mnu_file.Text = "Thoát";
             this.mnu_file.Click += new System.EventHandler(this.mnu_file_Click_1);
             // 
@@ -99,40 +99,6 @@
             this.mnu_danhmuc.Name = "mnu_danhmuc";
             this.mnu_danhmuc.Size = new System.Drawing.Size(90, 24);
             this.mnu_danhmuc.Text = "&Danh mục";
-            // 
-            // mnu_chatlieu
-            // 
-            this.mnu_chatlieu.Image = ((System.Drawing.Image)(resources.GetObject("mnu_chatlieu.Image")));
-            this.mnu_chatlieu.Name = "mnu_chatlieu";
-            this.mnu_chatlieu.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
-            this.mnu_chatlieu.Size = new System.Drawing.Size(220, 26);
-            this.mnu_chatlieu.Text = "&Chất liệu";
-            this.mnu_chatlieu.Click += new System.EventHandler(this.chấtToolStripMenuItem_Click);
-            // 
-            // mnu_nhanvien
-            // 
-            this.mnu_nhanvien.Image = global::QLBH_11_TRANMINHDUNG.Properties.Resources.Employees;
-            this.mnu_nhanvien.Name = "mnu_nhanvien";
-            this.mnu_nhanvien.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.mnu_nhanvien.Size = new System.Drawing.Size(220, 26);
-            this.mnu_nhanvien.Text = "&Nhân viên";
-            // 
-            // mnu_khachhang
-            // 
-            this.mnu_khachhang.Image = global::QLBH_11_TRANMINHDUNG.Properties.Resources.customer;
-            this.mnu_khachhang.Name = "mnu_khachhang";
-            this.mnu_khachhang.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.K)));
-            this.mnu_khachhang.Size = new System.Drawing.Size(220, 26);
-            this.mnu_khachhang.Text = "&Khách hàng";
-            this.mnu_khachhang.Click += new System.EventHandler(this.kháchHàngToolStripMenuItem_Click);
-            // 
-            // mnu_hanghoa
-            // 
-            this.mnu_hanghoa.Image = global::QLBH_11_TRANMINHDUNG.Properties.Resources.Commodities;
-            this.mnu_hanghoa.Name = "mnu_hanghoa";
-            this.mnu_hanghoa.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.H)));
-            this.mnu_hanghoa.Size = new System.Drawing.Size(220, 26);
-            this.mnu_hanghoa.Text = "&Hàng hóa";
             // 
             // mnu_hoadon
             // 
@@ -208,7 +174,7 @@
             // mnuHien_trogiup
             // 
             this.mnuHien_trogiup.Name = "mnuHien_trogiup";
-            this.mnuHien_trogiup.Size = new System.Drawing.Size(224, 26);
+            this.mnuHien_trogiup.Size = new System.Drawing.Size(147, 26);
             this.mnuHien_trogiup.Text = "Trợ giúp";
             // 
             // mnu_vainet
@@ -216,19 +182,6 @@
             this.mnu_vainet.Name = "mnu_vainet";
             this.mnu_vainet.Size = new System.Drawing.Size(68, 24);
             this.mnu_vainet.Text = "&Vài nét";
-            // 
-            // pic_bg
-            // 
-            this.pic_bg.BackgroundImage = global::QLBH_11_TRANMINHDUNG.Properties.Resources.bg;
-            this.pic_bg.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pic_bg.Image = global::QLBH_11_TRANMINHDUNG.Properties.Resources.bg;
-            this.pic_bg.Location = new System.Drawing.Point(0, 28);
-            this.pic_bg.Name = "pic_bg";
-            this.pic_bg.Size = new System.Drawing.Size(1454, 591);
-            this.pic_bg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pic_bg.TabIndex = 2;
-            this.pic_bg.TabStop = false;
-            this.pic_bg.Click += new System.EventHandler(this.pic_bg_Click);
             // 
             // lbl_tieude
             // 
@@ -245,6 +198,53 @@
             this.lbl_tieude.Text = "Chương trình quản lý Bán hàng lưu niệm";
             this.lbl_tieude.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lbl_tieude.UseCompatibleTextRendering = true;
+            // 
+            // pic_bg
+            // 
+            this.pic_bg.BackgroundImage = global::QLBH_11_TRANMINHDUNG.Properties.Resources.bg;
+            this.pic_bg.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pic_bg.Image = global::QLBH_11_TRANMINHDUNG.Properties.Resources.bg;
+            this.pic_bg.Location = new System.Drawing.Point(0, 28);
+            this.pic_bg.Name = "pic_bg";
+            this.pic_bg.Size = new System.Drawing.Size(1454, 591);
+            this.pic_bg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pic_bg.TabIndex = 2;
+            this.pic_bg.TabStop = false;
+            this.pic_bg.Click += new System.EventHandler(this.pic_bg_Click);
+            // 
+            // mnu_chatlieu
+            // 
+            this.mnu_chatlieu.Image = ((System.Drawing.Image)(resources.GetObject("mnu_chatlieu.Image")));
+            this.mnu_chatlieu.Name = "mnu_chatlieu";
+            this.mnu_chatlieu.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
+            this.mnu_chatlieu.Size = new System.Drawing.Size(220, 26);
+            this.mnu_chatlieu.Text = "&Chất liệu";
+            this.mnu_chatlieu.Click += new System.EventHandler(this.chấtToolStripMenuItem_Click);
+            // 
+            // mnu_nhanvien
+            // 
+            this.mnu_nhanvien.Image = global::QLBH_11_TRANMINHDUNG.Properties.Resources.Employees;
+            this.mnu_nhanvien.Name = "mnu_nhanvien";
+            this.mnu_nhanvien.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
+            this.mnu_nhanvien.Size = new System.Drawing.Size(220, 26);
+            this.mnu_nhanvien.Text = "&Nhân viên";
+            // 
+            // mnu_khachhang
+            // 
+            this.mnu_khachhang.Image = global::QLBH_11_TRANMINHDUNG.Properties.Resources.customer;
+            this.mnu_khachhang.Name = "mnu_khachhang";
+            this.mnu_khachhang.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.K)));
+            this.mnu_khachhang.Size = new System.Drawing.Size(220, 26);
+            this.mnu_khachhang.Text = "&Khách hàng";
+            this.mnu_khachhang.Click += new System.EventHandler(this.kháchHàngToolStripMenuItem_Click);
+            // 
+            // mnu_hanghoa
+            // 
+            this.mnu_hanghoa.Image = global::QLBH_11_TRANMINHDUNG.Properties.Resources.Commodities;
+            this.mnu_hanghoa.Name = "mnu_hanghoa";
+            this.mnu_hanghoa.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.H)));
+            this.mnu_hanghoa.Size = new System.Drawing.Size(220, 26);
+            this.mnu_hanghoa.Text = "&Hàng hóa";
             // 
             // frmMain
             // 
