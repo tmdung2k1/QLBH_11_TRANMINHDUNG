@@ -16,7 +16,8 @@ namespace QLBH_11_TRANMINHDUNG
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmDMhanghoa());
+            Application.Run(new frmHDbanhang());
+
         }
     }
 }
