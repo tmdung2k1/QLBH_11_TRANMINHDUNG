@@ -69,7 +69,7 @@
             this.mnu_vainet});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1454, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(1454, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -78,7 +78,7 @@
             this.tệpTinToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnu_file});
             this.tệpTinToolStripMenuItem.Name = "tệpTinToolStripMenuItem";
-            this.tệpTinToolStripMenuItem.Size = new System.Drawing.Size(69, 26);
+            this.tệpTinToolStripMenuItem.Size = new System.Drawing.Size(69, 24);
             this.tệpTinToolStripMenuItem.Text = "&Tệp tin";
             // 
             // mnu_file
@@ -97,7 +97,7 @@
             this.mnu_khachhang,
             this.mnu_hanghoa});
             this.mnu_danhmuc.Name = "mnu_danhmuc";
-            this.mnu_danhmuc.Size = new System.Drawing.Size(90, 26);
+            this.mnu_danhmuc.Size = new System.Drawing.Size(90, 24);
             this.mnu_danhmuc.Text = "&Danh mục";
             // 
             // mnu_chatlieu
@@ -139,7 +139,7 @@
             this.mnu_hoadon.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnu_hoadonban});
             this.mnu_hoadon.Name = "mnu_hoadon";
-            this.mnu_hoadon.Size = new System.Drawing.Size(81, 26);
+            this.mnu_hoadon.Size = new System.Drawing.Size(81, 24);
             this.mnu_hoadon.Text = "&Hóa đơn";
             // 
             // mnu_hoadonban
@@ -155,7 +155,7 @@
             this.mnufind_hang,
             this.mnufind_khachhang});
             this.mnu_timkiem.Name = "mnu_timkiem";
-            this.mnu_timkiem.Size = new System.Drawing.Size(84, 26);
+            this.mnu_timkiem.Size = new System.Drawing.Size(84, 24);
             this.mnu_timkiem.Text = "&Tìm kiếm";
             // 
             // mnufind_hoadon
@@ -182,7 +182,7 @@
             this.mnuBC_hangton,
             this.mnuBC_doanhthu});
             this.mnu_baocao.Name = "mnu_baocao";
-            this.mnu_baocao.Size = new System.Drawing.Size(77, 26);
+            this.mnu_baocao.Size = new System.Drawing.Size(77, 24);
             this.mnu_baocao.Text = "&Báo cáo";
             // 
             // mnuBC_hangton
@@ -202,7 +202,7 @@
             this.trợGiúpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuHien_trogiup});
             this.trợGiúpToolStripMenuItem.Name = "trợGiúpToolStripMenuItem";
-            this.trợGiúpToolStripMenuItem.Size = new System.Drawing.Size(78, 26);
+            this.trợGiúpToolStripMenuItem.Size = new System.Drawing.Size(78, 24);
             this.trợGiúpToolStripMenuItem.Text = "&Trợ giúp";
             // 
             // mnuHien_trogiup
@@ -214,7 +214,7 @@
             // mnu_vainet
             // 
             this.mnu_vainet.Name = "mnu_vainet";
-            this.mnu_vainet.Size = new System.Drawing.Size(68, 26);
+            this.mnu_vainet.Size = new System.Drawing.Size(68, 24);
             this.mnu_vainet.Text = "&Vài nét";
             // 
             // lbl_tieude
@@ -238,9 +238,9 @@
             this.pic_bg.BackgroundImage = global::QLBH_11_TRANMINHDUNG.Properties.Resources.bg;
             this.pic_bg.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pic_bg.Image = global::QLBH_11_TRANMINHDUNG.Properties.Resources.bg;
-            this.pic_bg.Location = new System.Drawing.Point(0, 30);
+            this.pic_bg.Location = new System.Drawing.Point(0, 28);
             this.pic_bg.Name = "pic_bg";
-            this.pic_bg.Size = new System.Drawing.Size(1454, 589);
+            this.pic_bg.Size = new System.Drawing.Size(1454, 591);
             this.pic_bg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pic_bg.TabIndex = 2;
             this.pic_bg.TabStop = false;
@@ -262,6 +262,7 @@
             this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Chương trình quản lý bán hàng lưu niệm";
+            this.Load += new System.EventHandler(this.frmMain_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_bg)).EndInit();

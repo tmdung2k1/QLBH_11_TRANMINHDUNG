@@ -21,5 +21,10 @@ namespace QLBH_11_TRANMINHDUNG
         {
 
         }
+
+        private void frmDMhanghoa_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

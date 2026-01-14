@@ -27,10 +27,10 @@ namespace QLBH_11_TRANMINHDUNG.Properties {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
         [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\QLBH_11_TRANM" +
-            "IINHDUNG.mdf;Integrated Security=True;Connect Timeout=30")]
-        public string QLBH11TRANMINHDUNG {
+            "INHDUNG.mdf;Integrated Security=True;Connect Timeout=30")]
+        public string QLBHLUUNIEM11TRANMINHDUNG {
             get {
-                return ((string)(this["QLBH11TRANMINHDUNG"]));
+                return ((string)(this["QLBHLUUNIEM11TRANMINHDUNG"]));
             }
         }
     }

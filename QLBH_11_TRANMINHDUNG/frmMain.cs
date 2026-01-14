@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using QLBH_11_TRANMINHDUNG.Class;
 
 namespace QLBH_11_TRANMINHDUNG
 {
@@ -39,7 +40,13 @@ namespace QLBH_11_TRANMINHDUNG
 
         private void mnu_file_Click_1(object sender, EventArgs e)
         {
-            Close();
+           Functions.Disconnect(); // Đóng kết nối
+            Application.Exit();
+        }
+
+        private void frmMain_Load(object sender, EventArgs e)
+        {
+            Functions.Connect(); // Mở kết nối
         }
     }
 }
