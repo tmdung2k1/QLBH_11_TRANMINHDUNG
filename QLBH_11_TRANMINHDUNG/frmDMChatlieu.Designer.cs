@@ -71,6 +71,7 @@
             this.btn_boqua.TabIndex = 0;
             this.btn_boqua.Text = "&Bỏ qua";
             this.btn_boqua.UseVisualStyleBackColor = true;
+            this.btn_boqua.Click += new System.EventHandler(this.btn_boqua_Click);
             // 
             // btn_dong
             // 
@@ -80,6 +81,7 @@
             this.btn_dong.TabIndex = 0;
             this.btn_dong.Text = "&Đóng";
             this.btn_dong.UseVisualStyleBackColor = true;
+            this.btn_dong.Click += new System.EventHandler(this.btn_dong_Click);
             // 
             // btn_luu
             // 
@@ -89,6 +91,7 @@
             this.btn_luu.TabIndex = 0;
             this.btn_luu.Text = "&Lưu";
             this.btn_luu.UseVisualStyleBackColor = true;
+            this.btn_luu.Click += new System.EventHandler(this.btn_luu_Click);
             // 
             // btn_sua
             // 
@@ -98,6 +101,7 @@
             this.btn_sua.TabIndex = 0;
             this.btn_sua.Text = "&Sửa";
             this.btn_sua.UseVisualStyleBackColor = true;
+            this.btn_sua.Click += new System.EventHandler(this.btn_sua_Click);
             // 
             // btn_xoa
             // 
@@ -107,6 +111,7 @@
             this.btn_xoa.TabIndex = 0;
             this.btn_xoa.Text = "&Xóa";
             this.btn_xoa.UseVisualStyleBackColor = true;
+            this.btn_xoa.Click += new System.EventHandler(this.btn_xoa_Click);
             // 
             // btn_them
             // 
@@ -116,6 +121,7 @@
             this.btn_them.TabIndex = 0;
             this.btn_them.Text = "&Thêm";
             this.btn_them.UseVisualStyleBackColor = true;
+            this.btn_them.Click += new System.EventHandler(this.btn_them_Click);
             // 
             // panel2
             // 
@@ -137,6 +143,7 @@
             this.txt_machatlieu.Name = "txt_machatlieu";
             this.txt_machatlieu.Size = new System.Drawing.Size(234, 27);
             this.txt_machatlieu.TabIndex = 2;
+            this.txt_machatlieu.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt_machatlieu_KeyUp);
             // 
             // txt_tenchatlieu
             // 
@@ -188,6 +195,8 @@
             this.dgv_chatlieu.RowTemplate.Height = 24;
             this.dgv_chatlieu.Size = new System.Drawing.Size(918, 355);
             this.dgv_chatlieu.TabIndex = 2;
+            this.dgv_chatlieu.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_chatlieu_CellContentClick);
+            this.dgv_chatlieu.Click += new System.EventHandler(this.dgv_chatlieu_Click);
             // 
             // frmDMChatlieu
             // 
@@ -202,6 +211,7 @@
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Danh mục Chất liệu";
+            this.Load += new System.EventHandler(this.frmDMChatlieu_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

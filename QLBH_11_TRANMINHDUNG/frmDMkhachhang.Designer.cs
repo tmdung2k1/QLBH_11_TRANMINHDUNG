@@ -61,14 +61,14 @@
             this.panel1.Controls.Add(this.btn_xoa);
             this.panel1.Controls.Add(this.btn_them);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 496);
+            this.panel1.Location = new System.Drawing.Point(0, 569);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(926, 62);
+            this.panel1.Size = new System.Drawing.Size(1418, 62);
             this.panel1.TabIndex = 0;
             // 
             // btn_boqua
             // 
-            this.btn_boqua.Location = new System.Drawing.Point(636, 13);
+            this.btn_boqua.Location = new System.Drawing.Point(889, 13);
             this.btn_boqua.Name = "btn_boqua";
             this.btn_boqua.Size = new System.Drawing.Size(116, 41);
             this.btn_boqua.TabIndex = 7;
@@ -77,7 +77,7 @@
             // 
             // btn_dong
             // 
-            this.btn_dong.Location = new System.Drawing.Point(791, 15);
+            this.btn_dong.Location = new System.Drawing.Point(1044, 15);
             this.btn_dong.Name = "btn_dong";
             this.btn_dong.Size = new System.Drawing.Size(116, 41);
             this.btn_dong.TabIndex = 8;
@@ -86,7 +86,7 @@
             // 
             // btn_luu
             // 
-            this.btn_luu.Location = new System.Drawing.Point(485, 13);
+            this.btn_luu.Location = new System.Drawing.Point(738, 13);
             this.btn_luu.Name = "btn_luu";
             this.btn_luu.Size = new System.Drawing.Size(116, 41);
             this.btn_luu.TabIndex = 9;
@@ -95,7 +95,7 @@
             // 
             // btn_sua
             // 
-            this.btn_sua.Location = new System.Drawing.Point(332, 13);
+            this.btn_sua.Location = new System.Drawing.Point(585, 13);
             this.btn_sua.Name = "btn_sua";
             this.btn_sua.Size = new System.Drawing.Size(116, 41);
             this.btn_sua.TabIndex = 10;
@@ -104,7 +104,7 @@
             // 
             // btn_xoa
             // 
-            this.btn_xoa.Location = new System.Drawing.Point(177, 13);
+            this.btn_xoa.Location = new System.Drawing.Point(430, 13);
             this.btn_xoa.Name = "btn_xoa";
             this.btn_xoa.Size = new System.Drawing.Size(116, 41);
             this.btn_xoa.TabIndex = 11;
@@ -113,7 +113,7 @@
             // 
             // btn_them
             // 
-            this.btn_them.Location = new System.Drawing.Point(20, 13);
+            this.btn_them.Location = new System.Drawing.Point(273, 13);
             this.btn_them.Name = "btn_them";
             this.btn_them.Size = new System.Drawing.Size(116, 41);
             this.btn_them.TabIndex = 12;
@@ -134,13 +134,13 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(926, 140);
+            this.panel2.Size = new System.Drawing.Size(1418, 140);
             this.panel2.TabIndex = 1;
             // 
             // mtb_dienthoai
             // 
             this.mtb_dienthoai.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mtb_dienthoai.Location = new System.Drawing.Point(575, 90);
+            this.mtb_dienthoai.Location = new System.Drawing.Point(1070, 90);
             this.mtb_dienthoai.Mask = "(084) 000-0000";
             this.mtb_dienthoai.Name = "mtb_dienthoai";
             this.mtb_dienthoai.Size = new System.Drawing.Size(273, 27);
@@ -149,7 +149,7 @@
             // txt_diachi
             // 
             this.txt_diachi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_diachi.Location = new System.Drawing.Point(575, 57);
+            this.txt_diachi.Location = new System.Drawing.Point(1070, 57);
             this.txt_diachi.Name = "txt_diachi";
             this.txt_diachi.Size = new System.Drawing.Size(273, 27);
             this.txt_diachi.TabIndex = 6;
@@ -157,7 +157,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(489, 101);
+            this.label6.Location = new System.Drawing.Point(984, 101);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(66, 16);
             this.label6.TabIndex = 4;
@@ -166,7 +166,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(489, 68);
+            this.label2.Location = new System.Drawing.Point(984, 68);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(47, 16);
             this.label2.TabIndex = 5;
@@ -213,7 +213,7 @@
             // 
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Blue;
-            this.label1.Location = new System.Drawing.Point(294, 0);
+            this.label1.Location = new System.Drawing.Point(480, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(339, 45);
             this.label1.TabIndex = 0;
@@ -228,7 +228,7 @@
             this.dgv_khachhang.Name = "dgv_khachhang";
             this.dgv_khachhang.RowHeadersWidth = 51;
             this.dgv_khachhang.RowTemplate.Height = 24;
-            this.dgv_khachhang.Size = new System.Drawing.Size(926, 356);
+            this.dgv_khachhang.Size = new System.Drawing.Size(1418, 429);
             this.dgv_khachhang.TabIndex = 2;
             this.dgv_khachhang.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -236,7 +236,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(926, 558);
+            this.ClientSize = new System.Drawing.Size(1418, 631);
             this.Controls.Add(this.dgv_khachhang);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
