@@ -54,19 +54,26 @@ namespace QLBH_11_TRANMINHDUNG
         }
         //Phương thức nạp dữ liệu
         private void LoadDataGridView()
-        {
-            string sql;
-            sql = "SELECT * from tblKhach";
-            tblKH = Functions.GetDataToTable(sql); //Lấy dữ liệu từ bảng
-            dgv_khachhang.DataSource = tblKH; //Hiển thị vào dataGridView
+        {     
+            string sql = "SELECT * from tblKhach";
+            tblKH = Functions.GetDataToTable(sql);
+            dgv_khachhang.DataSource = tblKH;
+
+            dgv_khachhang.Columns[0].Name = "MaKhach";
+            dgv_khachhang.Columns[1].Name = "TenKhachHang";
+            dgv_khachhang.Columns[2].Name = "DiaChi";
+            dgv_khachhang.Columns[3].Name = "DienThoai";
+
             dgv_khachhang.Columns[0].HeaderText = "Mã khách";
             dgv_khachhang.Columns[1].HeaderText = "Tên khách";
             dgv_khachhang.Columns[2].HeaderText = "Địa chỉ";
             dgv_khachhang.Columns[3].HeaderText = "Điện thoại";
+
             dgv_khachhang.Columns[0].Width = 100;
             dgv_khachhang.Columns[1].Width = 150;
             dgv_khachhang.Columns[2].Width = 150;
             dgv_khachhang.Columns[3].Width = 150;
+
             dgv_khachhang.AllowUserToAddRows = false;
             dgv_khachhang.EditMode = DataGridViewEditMode.EditProgrammatically;
         }
@@ -85,7 +92,7 @@ namespace QLBH_11_TRANMINHDUNG
                 return;
             }
             txt_makhach.Text = dgv_khachhang.CurrentRow.Cells["MaKhach"].Value.ToString();
-            txt_tenkhach.Text = dgv_khachhang.CurrentRow.Cells["TenKhach"].Value.ToString();
+            txt_tenkhach.Text = dgv_khachhang.CurrentRow.Cells["TenKhachHang"].Value.ToString();
             txt_diachi.Text = dgv_khachhang.CurrentRow.Cells["DiaChi"].Value.ToString();
             mtb_dienthoai.Text = dgv_khachhang.CurrentRow.Cells["DienThoai"].Value.ToString();
             btn_sua.Enabled = true;
@@ -197,7 +204,7 @@ namespace QLBH_11_TRANMINHDUNG
                 mtb_dienthoai.Focus();
                 return;
             }
-            sql = "UPDATE tblKhach SET TenKhach=N'" + txt_tenkhach.Text.Trim().ToString() + "',DiaChi=N'" +
+            sql = "UPDATE tblKhach SET TenKhachHang=N'" + txt_tenkhach.Text.Trim().ToString() + "',DiaChi=N'" +
                 txt_diachi.Text.Trim().ToString() + "',DienThoai='" + mtb_dienthoai.Text.ToString() +
                 "' WHERE MaKhach=N'" + txt_makhach.Text + "'";
             Functions.RunSQL(sql);

@@ -61,17 +61,17 @@
             this.panel1.Controls.Add(this.btn_xoa);
             this.panel1.Controls.Add(this.btn_them);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 569);
+            this.panel1.Location = new System.Drawing.Point(0, 542);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1418, 62);
-            this.panel1.TabIndex = 0;
+            this.panel1.Size = new System.Drawing.Size(1412, 62);
+            this.panel1.TabIndex = 2;
             // 
             // btn_boqua
             // 
             this.btn_boqua.Location = new System.Drawing.Point(889, 13);
             this.btn_boqua.Name = "btn_boqua";
             this.btn_boqua.Size = new System.Drawing.Size(116, 41);
-            this.btn_boqua.TabIndex = 7;
+            this.btn_boqua.TabIndex = 4;
             this.btn_boqua.Text = "&Bỏ qua";
             this.btn_boqua.UseVisualStyleBackColor = true;
             this.btn_boqua.Click += new System.EventHandler(this.btn_boqua_Click);
@@ -81,7 +81,7 @@
             this.btn_dong.Location = new System.Drawing.Point(1044, 15);
             this.btn_dong.Name = "btn_dong";
             this.btn_dong.Size = new System.Drawing.Size(116, 41);
-            this.btn_dong.TabIndex = 8;
+            this.btn_dong.TabIndex = 5;
             this.btn_dong.Text = "&Đóng";
             this.btn_dong.UseVisualStyleBackColor = true;
             this.btn_dong.Click += new System.EventHandler(this.btn_dong_Click);
@@ -91,7 +91,7 @@
             this.btn_luu.Location = new System.Drawing.Point(738, 13);
             this.btn_luu.Name = "btn_luu";
             this.btn_luu.Size = new System.Drawing.Size(116, 41);
-            this.btn_luu.TabIndex = 9;
+            this.btn_luu.TabIndex = 3;
             this.btn_luu.Text = "&Lưu";
             this.btn_luu.UseVisualStyleBackColor = true;
             this.btn_luu.Click += new System.EventHandler(this.btn_luu_Click);
@@ -101,7 +101,7 @@
             this.btn_sua.Location = new System.Drawing.Point(585, 13);
             this.btn_sua.Name = "btn_sua";
             this.btn_sua.Size = new System.Drawing.Size(116, 41);
-            this.btn_sua.TabIndex = 10;
+            this.btn_sua.TabIndex = 2;
             this.btn_sua.Text = "&Sửa";
             this.btn_sua.UseVisualStyleBackColor = true;
             this.btn_sua.Click += new System.EventHandler(this.btn_sua_Click);
@@ -111,7 +111,7 @@
             this.btn_xoa.Location = new System.Drawing.Point(430, 13);
             this.btn_xoa.Name = "btn_xoa";
             this.btn_xoa.Size = new System.Drawing.Size(116, 41);
-            this.btn_xoa.TabIndex = 11;
+            this.btn_xoa.TabIndex = 1;
             this.btn_xoa.Text = "&Xóa";
             this.btn_xoa.UseVisualStyleBackColor = true;
             this.btn_xoa.Click += new System.EventHandler(this.btn_xoa_Click);
@@ -121,7 +121,7 @@
             this.btn_them.Location = new System.Drawing.Point(273, 13);
             this.btn_them.Name = "btn_them";
             this.btn_them.Size = new System.Drawing.Size(116, 41);
-            this.btn_them.TabIndex = 12;
+            this.btn_them.TabIndex = 0;
             this.btn_them.Text = "&Thêm";
             this.btn_them.UseVisualStyleBackColor = true;
             this.btn_them.Click += new System.EventHandler(this.btn_them_Click);
@@ -140,8 +140,8 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1418, 140);
-            this.panel2.TabIndex = 1;
+            this.panel2.Size = new System.Drawing.Size(1412, 140);
+            this.panel2.TabIndex = 0;
             // 
             // mtb_dienthoai
             // 
@@ -158,7 +158,7 @@
             this.txt_diachi.Location = new System.Drawing.Point(1070, 57);
             this.txt_diachi.Name = "txt_diachi";
             this.txt_diachi.Size = new System.Drawing.Size(273, 27);
-            this.txt_diachi.TabIndex = 6;
+            this.txt_diachi.TabIndex = 5;
             // 
             // label6
             // 
@@ -166,7 +166,7 @@
             this.label6.Location = new System.Drawing.Point(984, 101);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(66, 16);
-            this.label6.TabIndex = 4;
+            this.label6.TabIndex = 6;
             this.label6.Text = "Điện thoại";
             // 
             // label2
@@ -175,7 +175,7 @@
             this.label2.Location = new System.Drawing.Point(984, 68);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(47, 16);
-            this.label2.TabIndex = 5;
+            this.label2.TabIndex = 4;
             this.label2.Text = "Địa chỉ";
             // 
             // txt_tenkhach
@@ -184,7 +184,7 @@
             this.txt_tenkhach.Location = new System.Drawing.Point(155, 90);
             this.txt_tenkhach.Name = "txt_tenkhach";
             this.txt_tenkhach.Size = new System.Drawing.Size(276, 27);
-            this.txt_tenkhach.TabIndex = 1;
+            this.txt_tenkhach.TabIndex = 3;
             this.txt_tenkhach.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // txt_makhach
@@ -203,7 +203,7 @@
             this.label5.Location = new System.Drawing.Point(56, 101);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(70, 16);
-            this.label5.TabIndex = 0;
+            this.label5.TabIndex = 2;
             this.label5.Text = "Tên khách";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
@@ -235,8 +235,8 @@
             this.dgv_khachhang.Name = "dgv_khachhang";
             this.dgv_khachhang.RowHeadersWidth = 51;
             this.dgv_khachhang.RowTemplate.Height = 24;
-            this.dgv_khachhang.Size = new System.Drawing.Size(1418, 429);
-            this.dgv_khachhang.TabIndex = 2;
+            this.dgv_khachhang.Size = new System.Drawing.Size(1412, 402);
+            this.dgv_khachhang.TabIndex = 1;
             this.dgv_khachhang.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dgv_khachhang.Click += new System.EventHandler(this.dgv_khachhang_Click);
             // 
@@ -244,7 +244,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1418, 631);
+            this.ClientSize = new System.Drawing.Size(1412, 604);
             this.Controls.Add(this.dgv_khachhang);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);

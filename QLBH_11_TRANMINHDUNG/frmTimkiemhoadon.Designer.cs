@@ -74,6 +74,7 @@
             this.btn_boqua.TabIndex = 7;
             this.btn_boqua.Text = "Tìm &lại";
             this.btn_boqua.UseVisualStyleBackColor = true;
+            this.btn_boqua.Click += new System.EventHandler(this.btn_boqua_Click);
             // 
             // btn_dong
             // 
@@ -83,6 +84,7 @@
             this.btn_dong.TabIndex = 8;
             this.btn_dong.Text = "&Đóng";
             this.btn_dong.UseVisualStyleBackColor = true;
+            this.btn_dong.Click += new System.EventHandler(this.btn_dong_Click);
             // 
             // btn_them
             // 
@@ -92,6 +94,7 @@
             this.btn_them.TabIndex = 12;
             this.btn_them.Text = "&Tìm kiếm";
             this.btn_them.UseVisualStyleBackColor = true;
+            this.btn_them.Click += new System.EventHandler(this.btn_them_Click);
             // 
             // panel2
             // 
@@ -156,6 +159,7 @@
             this.txt_tongtien.Name = "txt_tongtien";
             this.txt_tongtien.Size = new System.Drawing.Size(284, 27);
             this.txt_tongtien.TabIndex = 1;
+            this.txt_tongtien.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_tongtien_KeyPress);
             // 
             // txt_makhachhang
             // 
@@ -260,6 +264,7 @@
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tìm kiếm hóa đơn";
+            this.Load += new System.EventHandler(this.frmTimkiemhoadon_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

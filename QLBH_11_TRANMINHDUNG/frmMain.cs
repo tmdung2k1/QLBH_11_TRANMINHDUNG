@@ -76,20 +76,18 @@ namespace QLBH_11_TRANMINHDUNG
 
         private void mnufind_hoadon_Click(object sender, EventArgs e)
         {
-            frmHDbanhang frm = new frmHDbanhang();
+           frmTimkiemhoadon frm = new frmTimkiemhoadon();
             frm.ShowDialog();
         }
 
         private void mnufind_hang_Click(object sender, EventArgs e)
         {
-            frmDMhanghoa frm = new frmDMhanghoa();
-            frm.ShowDialog();
+            
         }
 
         private void mnufind_khachhang_Click(object sender, EventArgs e)
         {
-            frmDMkhachhang frm = new frmDMkhachhang();
-            frm.ShowDialog();
+            
         }
     }
 }
