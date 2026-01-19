@@ -38,7 +38,6 @@
             this.mtb_dienthoai = new System.Windows.Forms.MaskedTextBox();
             this.txt_diachi = new System.Windows.Forms.TextBox();
             this.txt_tenkhach = new System.Windows.Forms.TextBox();
-            this.txt_makhach = new System.Windows.Forms.TextBox();
             this.cbo_manhanvien = new System.Windows.Forms.ComboBox();
             this.dtp_ngayban = new System.Windows.Forms.DateTimePicker();
             this.txt_tennhanvien = new System.Windows.Forms.TextBox();
@@ -58,7 +57,7 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.txt_tongtien = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
-            this.lbl_tongtien = new System.Windows.Forms.Label();
+            this.lbl_bangchu = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
@@ -79,6 +78,7 @@
             this.btn_luuhoadon = new System.Windows.Forms.Button();
             this.btn_huyhoadon = new System.Windows.Forms.Button();
             this.btn_themhoadon = new System.Windows.Forms.Button();
+            this.cbo_makhach = new System.Windows.Forms.ComboBox();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -148,10 +148,10 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.groupBox1.Controls.Add(this.cbo_makhach);
             this.groupBox1.Controls.Add(this.mtb_dienthoai);
             this.groupBox1.Controls.Add(this.txt_diachi);
             this.groupBox1.Controls.Add(this.txt_tenkhach);
-            this.groupBox1.Controls.Add(this.txt_makhach);
             this.groupBox1.Controls.Add(this.cbo_manhanvien);
             this.groupBox1.Controls.Add(this.dtp_ngayban);
             this.groupBox1.Controls.Add(this.txt_tennhanvien);
@@ -202,14 +202,6 @@
             this.txt_tenkhach.ReadOnly = true;
             this.txt_tenkhach.Size = new System.Drawing.Size(276, 27);
             this.txt_tenkhach.TabIndex = 4;
-            // 
-            // txt_makhach
-            // 
-            this.txt_makhach.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_makhach.Location = new System.Drawing.Point(689, 28);
-            this.txt_makhach.Name = "txt_makhach";
-            this.txt_makhach.Size = new System.Drawing.Size(276, 27);
-            this.txt_makhach.TabIndex = 5;
             // 
             // cbo_manhanvien
             // 
@@ -365,13 +357,14 @@
             this.dvg_hoadonbanhang.RowTemplate.Height = 24;
             this.dvg_hoadonbanhang.Size = new System.Drawing.Size(981, 221);
             this.dvg_hoadonbanhang.TabIndex = 3;
+            this.dvg_hoadonbanhang.DoubleClick += new System.EventHandler(this.dvg_hoadonbanhang_DoubleClick);
             // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.panel6.Controls.Add(this.txt_tongtien);
             this.panel6.Controls.Add(this.label18);
-            this.panel6.Controls.Add(this.lbl_tongtien);
+            this.panel6.Controls.Add(this.lbl_bangchu);
             this.panel6.Controls.Add(this.label17);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel6.Location = new System.Drawing.Point(3, 340);
@@ -397,16 +390,16 @@
             this.label18.TabIndex = 1;
             this.label18.Text = "Tổng tiền:";
             // 
-            // lbl_tongtien
+            // lbl_bangchu
             // 
-            this.lbl_tongtien.AutoSize = true;
-            this.lbl_tongtien.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_tongtien.ForeColor = System.Drawing.Color.Blue;
-            this.lbl_tongtien.Location = new System.Drawing.Point(49, 36);
-            this.lbl_tongtien.Name = "lbl_tongtien";
-            this.lbl_tongtien.Size = new System.Drawing.Size(94, 20);
-            this.lbl_tongtien.TabIndex = 0;
-            this.lbl_tongtien.Text = "Bằng chữ:";
+            this.lbl_bangchu.AutoSize = true;
+            this.lbl_bangchu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_bangchu.ForeColor = System.Drawing.Color.Blue;
+            this.lbl_bangchu.Location = new System.Drawing.Point(49, 36);
+            this.lbl_bangchu.Name = "lbl_bangchu";
+            this.lbl_bangchu.Size = new System.Drawing.Size(94, 20);
+            this.lbl_bangchu.TabIndex = 0;
+            this.lbl_bangchu.Text = "Bằng chữ:";
             // 
             // label17
             // 
@@ -542,6 +535,7 @@
             this.txt_soluong.ReadOnly = true;
             this.txt_soluong.Size = new System.Drawing.Size(172, 27);
             this.txt_soluong.TabIndex = 1;
+            this.txt_soluong.TextChanged += new System.EventHandler(this.txt_soluong_TextChanged);
             // 
             // txt_tenhang
             // 
@@ -600,6 +594,7 @@
             this.btn_luuhoadon.TabIndex = 15;
             this.btn_luuhoadon.Text = "&Lưu hóa đơn";
             this.btn_luuhoadon.UseVisualStyleBackColor = false;
+            this.btn_luuhoadon.Click += new System.EventHandler(this.btn_luuhoadon_Click);
             // 
             // btn_huyhoadon
             // 
@@ -622,6 +617,17 @@
             this.btn_themhoadon.TabIndex = 18;
             this.btn_themhoadon.Text = "&Thêm hóa đơn";
             this.btn_themhoadon.UseVisualStyleBackColor = false;
+            this.btn_themhoadon.Click += new System.EventHandler(this.btn_themhoadon_Click);
+            // 
+            // cbo_makhach
+            // 
+            this.cbo_makhach.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbo_makhach.FormattingEnabled = true;
+            this.cbo_makhach.Location = new System.Drawing.Point(693, 27);
+            this.cbo_makhach.Name = "cbo_makhach";
+            this.cbo_makhach.Size = new System.Drawing.Size(269, 28);
+            this.cbo_makhach.TabIndex = 10;
+            this.cbo_makhach.SelectedIndexChanged += new System.EventHandler(this.cbo_makhach_SelectedIndexChanged);
             // 
             // frmHDbanhang
             // 
@@ -676,7 +682,6 @@
         private System.Windows.Forms.TextBox txt_tennhanvien;
         private System.Windows.Forms.TextBox txt_maHDban;
         private System.Windows.Forms.TextBox txt_tenkhach;
-        private System.Windows.Forms.TextBox txt_makhach;
         private System.Windows.Forms.MaskedTextBox mtb_dienthoai;
         private System.Windows.Forms.TextBox txt_diachi;
         private System.Windows.Forms.GroupBox groupBox2;
@@ -696,7 +701,7 @@
         private System.Windows.Forms.TextBox txt_giamgia;
         private System.Windows.Forms.DataGridView dvg_hoadonbanhang;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Label lbl_tongtien;
+        private System.Windows.Forms.Label lbl_bangchu;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.TextBox txt_tongtien;
         private System.Windows.Forms.Label label18;
@@ -705,5 +710,6 @@
         private System.Windows.Forms.Button btn_luuhoadon;
         private System.Windows.Forms.Button btn_huyhoadon;
         private System.Windows.Forms.Button btn_themhoadon;
+        private System.Windows.Forms.ComboBox cbo_makhach;
     }
 }

@@ -74,6 +74,7 @@
             this.btn_boqua.TabIndex = 7;
             this.btn_boqua.Text = "&Bỏ qua";
             this.btn_boqua.UseVisualStyleBackColor = true;
+            this.btn_boqua.Click += new System.EventHandler(this.btn_boqua_Click);
             // 
             // btn_dong
             // 
@@ -83,6 +84,7 @@
             this.btn_dong.TabIndex = 8;
             this.btn_dong.Text = "&Đóng";
             this.btn_dong.UseVisualStyleBackColor = true;
+            this.btn_dong.Click += new System.EventHandler(this.btn_dong_Click);
             // 
             // btn_luu
             // 
@@ -92,6 +94,7 @@
             this.btn_luu.TabIndex = 9;
             this.btn_luu.Text = "&Lưu";
             this.btn_luu.UseVisualStyleBackColor = true;
+            this.btn_luu.Click += new System.EventHandler(this.btn_luu_Click);
             // 
             // btn_sua
             // 
@@ -101,6 +104,7 @@
             this.btn_sua.TabIndex = 10;
             this.btn_sua.Text = "&Sửa";
             this.btn_sua.UseVisualStyleBackColor = true;
+            this.btn_sua.Click += new System.EventHandler(this.btn_sua_Click);
             // 
             // btn_xoa
             // 
@@ -110,6 +114,7 @@
             this.btn_xoa.TabIndex = 11;
             this.btn_xoa.Text = "&Xóa";
             this.btn_xoa.UseVisualStyleBackColor = true;
+            this.btn_xoa.Click += new System.EventHandler(this.btn_xoa_Click);
             // 
             // btn_them
             // 
@@ -119,6 +124,7 @@
             this.btn_them.TabIndex = 12;
             this.btn_them.Text = "&Thêm";
             this.btn_them.UseVisualStyleBackColor = true;
+            this.btn_them.Click += new System.EventHandler(this.btn_them_Click);
             // 
             // panel2
             // 
@@ -189,6 +195,7 @@
             this.txt_makhach.Size = new System.Drawing.Size(276, 27);
             this.txt_makhach.TabIndex = 1;
             this.txt_makhach.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txt_makhach.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt_makhach_KeyUp);
             // 
             // label5
             // 
@@ -231,6 +238,7 @@
             this.dgv_khachhang.Size = new System.Drawing.Size(1418, 429);
             this.dgv_khachhang.TabIndex = 2;
             this.dgv_khachhang.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dgv_khachhang.Click += new System.EventHandler(this.dgv_khachhang_Click);
             // 
             // frmDMkhachhang
             // 
@@ -244,6 +252,7 @@
             this.Name = "frmDMkhachhang";
             this.ShowInTaskbar = false;
             this.Text = "Danh mục khách hàng";
+            this.Load += new System.EventHandler(this.frmDMkhachhang_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

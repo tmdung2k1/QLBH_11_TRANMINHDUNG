@@ -61,7 +61,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.btn_boqua = new System.Windows.Forms.Button();
             this.btn_dong = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_hienthi = new System.Windows.Forms.Button();
             this.btn_luu = new System.Windows.Forms.Button();
             this.btn_sua = new System.Windows.Forms.Button();
             this.btn_xoa = new System.Windows.Forms.Button();
@@ -129,6 +129,7 @@
             this.btn_mo.TabIndex = 18;
             this.btn_mo.Text = "&Mở";
             this.btn_mo.UseVisualStyleBackColor = false;
+            this.btn_mo.Click += new System.EventHandler(this.btn_mo_Click);
             // 
             // pic_anh
             // 
@@ -383,7 +384,7 @@
             // 
             this.panel2.Controls.Add(this.btn_boqua);
             this.panel2.Controls.Add(this.btn_dong);
-            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.btn_hienthi);
             this.panel2.Controls.Add(this.btn_luu);
             this.panel2.Controls.Add(this.btn_sua);
             this.panel2.Controls.Add(this.btn_xoa);
@@ -403,6 +404,7 @@
             this.btn_boqua.TabIndex = 7;
             this.btn_boqua.Text = "&Bỏ qua";
             this.btn_boqua.UseVisualStyleBackColor = true;
+            this.btn_boqua.Click += new System.EventHandler(this.btn_boqua_Click);
             // 
             // btn_dong
             // 
@@ -412,15 +414,17 @@
             this.btn_dong.TabIndex = 8;
             this.btn_dong.Text = "&Đóng";
             this.btn_dong.UseVisualStyleBackColor = true;
+            this.btn_dong.Click += new System.EventHandler(this.btn_dong_Click);
             // 
-            // button1
+            // btn_hienthi
             // 
-            this.button1.Location = new System.Drawing.Point(741, 11);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(170, 41);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "&Hiển thị danh sách";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_hienthi.Location = new System.Drawing.Point(741, 11);
+            this.btn_hienthi.Name = "btn_hienthi";
+            this.btn_hienthi.Size = new System.Drawing.Size(170, 41);
+            this.btn_hienthi.TabIndex = 10;
+            this.btn_hienthi.Text = "&Hiển thị danh sách";
+            this.btn_hienthi.UseVisualStyleBackColor = true;
+            this.btn_hienthi.Click += new System.EventHandler(this.btn_hienthi_Click);
             // 
             // btn_luu
             // 
@@ -430,6 +434,7 @@
             this.btn_luu.TabIndex = 9;
             this.btn_luu.Text = "&Lưu";
             this.btn_luu.UseVisualStyleBackColor = true;
+            this.btn_luu.Click += new System.EventHandler(this.btn_luu_Click);
             // 
             // btn_sua
             // 
@@ -439,6 +444,7 @@
             this.btn_sua.TabIndex = 10;
             this.btn_sua.Text = "&Sửa";
             this.btn_sua.UseVisualStyleBackColor = true;
+            this.btn_sua.Click += new System.EventHandler(this.btn_sua_Click);
             // 
             // btn_xoa
             // 
@@ -448,6 +454,7 @@
             this.btn_xoa.TabIndex = 11;
             this.btn_xoa.Text = "&Xóa";
             this.btn_xoa.UseVisualStyleBackColor = true;
+            this.btn_xoa.Click += new System.EventHandler(this.btn_xoa_Click);
             // 
             // btn_them
             // 
@@ -457,6 +464,7 @@
             this.btn_them.TabIndex = 12;
             this.btn_them.Text = "&Thêm";
             this.btn_them.UseVisualStyleBackColor = true;
+            this.btn_them.Click += new System.EventHandler(this.btn_them_Click);
             // 
             // dvg_hanghoa
             // 
@@ -468,6 +476,8 @@
             this.dvg_hanghoa.RowTemplate.Height = 24;
             this.dvg_hanghoa.Size = new System.Drawing.Size(1408, 249);
             this.dvg_hanghoa.TabIndex = 2;
+            this.dvg_hanghoa.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dvg_hanghoa_CellClick);
+            this.dvg_hanghoa.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dvg_hanghoa_CellContentClick);
             // 
             // frmDMhanghoa
             // 
@@ -500,7 +510,7 @@
         private System.Windows.Forms.Button btn_boqua;
         private System.Windows.Forms.Button btn_dong;
         private System.Windows.Forms.Button btn_luu;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_hienthi;
         private System.Windows.Forms.Button btn_sua;
         private System.Windows.Forms.Button btn_xoa;
         private System.Windows.Forms.Button btn_them;
