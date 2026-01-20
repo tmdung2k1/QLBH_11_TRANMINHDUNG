@@ -112,5 +112,18 @@ namespace QLBH_11_TRANMINHDUNG
             frm.MdiParent = this;
             frm.Show();
         }
+
+        private void mnuHien_trogiup_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                System.Diagnostics.Process.Start("https://timoday.edu.vn/");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Không thể mở trình duyệt. Lỗi: " + ex.Message, "Lỗi",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }

@@ -224,6 +224,7 @@
             this.mnuHien_trogiup.Name = "mnuHien_trogiup";
             this.mnuHien_trogiup.Size = new System.Drawing.Size(147, 26);
             this.mnuHien_trogiup.Text = "Trợ giúp";
+            this.mnuHien_trogiup.Click += new System.EventHandler(this.mnuHien_trogiup_Click);
             // 
             // mnu_vainet
             // 
