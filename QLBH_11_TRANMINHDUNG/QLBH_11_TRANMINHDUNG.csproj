@@ -54,6 +54,28 @@
       <HintPath>..\packages\Microsoft.Office.Interop.Excel.16.0.18925.20022\lib\net40\Microsoft.Office.Interop.Excel.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Word.15.0.4797.1004\lib\net20\Microsoft.Office.Interop.Word.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -110,6 +132,36 @@
     <Compile Include="frmTimkiemhoadon.Designer.cs">
       <DependentUpon>frmTimkiemhoadon.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmTimkiemkhachhang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTimkiemkhachhang.Designer.cs">
+      <DependentUpon>frmTimkiemkhachhang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTimkiemhanghoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTimkiemhanghoa.Designer.cs">
+      <DependentUpon>frmTimkiemhanghoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBaoCao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBaoCao.Designer.cs">
+      <DependentUpon>frmBaoCao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBaoCaoHangTon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBaoCaoHangTon.Designer.cs">
+      <DependentUpon>frmBaoCaoHangTon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBaoCaoDoanhThu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBaoCaoDoanhThu.Designer.cs">
+      <DependentUpon>frmBaoCaoDoanhThu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmDMChatlieu.resx">
@@ -133,6 +185,30 @@
     <EmbeddedResource Include="frmTimkiemhoadon.resx">
       <DependentUpon>frmTimkiemhoadon.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmTimkiemkhachhang.resx">
+      <DependentUpon>frmTimkiemkhachhang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTimkiemhanghoa.resx">
+      <DependentUpon>frmTimkiemhanghoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBaoCao.resx">
+      <DependentUpon>frmBaoCao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBaoCaoHangTon.resx">
+      <DependentUpon>frmBaoCaoHangTon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBaoCaoDoanhThu.resx">
+      <DependentUpon>frmBaoCaoDoanhThu.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="rptSanPham.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="rptHangTon.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="rptDoanhThu.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

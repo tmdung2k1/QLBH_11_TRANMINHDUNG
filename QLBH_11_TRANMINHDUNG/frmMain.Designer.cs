@@ -46,6 +46,7 @@
             this.mnu_baocao = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuBC_hangton = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuBC_doanhthu = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuBC_sanpham = new System.Windows.Forms.ToolStripMenuItem();
             this.trợGiúpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuHien_trogiup = new System.Windows.Forms.ToolStripMenuItem();
             this.mnu_vainet = new System.Windows.Forms.ToolStripMenuItem();
@@ -182,23 +183,33 @@
             // mnu_baocao
             // 
             this.mnu_baocao.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnuBC_sanpham,
             this.mnuBC_hangton,
             this.mnuBC_doanhthu});
             this.mnu_baocao.Name = "mnu_baocao";
             this.mnu_baocao.Size = new System.Drawing.Size(77, 24);
             this.mnu_baocao.Text = "&Báo cáo";
             // 
+            // mnuBC_sanpham
+            // 
+            this.mnuBC_sanpham.Name = "mnuBC_sanpham";
+            this.mnuBC_sanpham.Size = new System.Drawing.Size(161, 26);
+            this.mnuBC_sanpham.Text = "Sản phẩm";
+            this.mnuBC_sanpham.Click += new System.EventHandler(this.mnuBC_sanpham_Click);
+            // 
             // mnuBC_hangton
             // 
             this.mnuBC_hangton.Name = "mnuBC_hangton";
             this.mnuBC_hangton.Size = new System.Drawing.Size(161, 26);
             this.mnuBC_hangton.Text = "Hàng tồn";
+            this.mnuBC_hangton.Click += new System.EventHandler(this.mnuBC_hangton_Click);
             // 
             // mnuBC_doanhthu
             // 
             this.mnuBC_doanhthu.Name = "mnuBC_doanhthu";
             this.mnuBC_doanhthu.Size = new System.Drawing.Size(161, 26);
             this.mnuBC_doanhthu.Text = "Doanh thu";
+            this.mnuBC_doanhthu.Click += new System.EventHandler(this.mnuBC_doanhthu_Click);
             // 
             // trợGiúpToolStripMenuItem
             // 
@@ -262,6 +273,7 @@
         private System.Windows.Forms.ToolStripMenuItem mnu_baocao;
         private System.Windows.Forms.ToolStripMenuItem mnuBC_hangton;
         private System.Windows.Forms.ToolStripMenuItem mnuBC_doanhthu;
+        private System.Windows.Forms.ToolStripMenuItem mnuBC_sanpham;
         private System.Windows.Forms.ToolStripMenuItem trợGiúpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mnuHien_trogiup;
         private System.Windows.Forms.ToolStripMenuItem mnu_vainet;
